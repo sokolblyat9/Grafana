@@ -35,9 +35,11 @@ docker run -d --name=GRAFANA \
 
 Для решения пока что перейти в папку:
 
-cd /home/DU/DOKER/GRAFANA
 
+```
+cd /home/DU/DOKER/GRAFANA
 chown 472:472 grafana/
+```
 
 Только после этого система запустится!
 
