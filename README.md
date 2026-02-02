@@ -14,6 +14,7 @@ docker run -d --name=GRAFANA \
 
 ## Рабочий конфиг с режимом сети HOST:
 
+```
 docker run -d --name=GRAFANA \
     -e "GF_PLUGINS_PREINSTALL=grafana-clock-panel, grafana-simple-json-datasource" \
     -e GF_DEFAULT_INSTANCE_NAME=Grafana_Continer \
@@ -21,7 +22,7 @@ docker run -d --name=GRAFANA \
     -e GF_SECURITY_ADMIN_PASSWORD=abobus \
     -v /home/DU/DOKER/GRAFANA/grafana:/var/lib/grafana \
     -p 3000:3000 grafana/grafana:12.4.0-20977568970-ubuntu
-
+```
 
 
 
