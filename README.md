@@ -9,6 +9,7 @@ docker run -d --name=GRAFANA \
     -e GF_SECURITY_ADMIN_USER=IlyaS \
     -e GF_SECURITY_ADMIN_PASSWORD=abobus \
     -v grafana-storage:/var/lib/grafana \
+     --restart=always \
     -p 3000:3000 grafana/grafana:12.4.0-20977568970-ubuntu
 ```
 
@@ -24,6 +25,7 @@ docker run -d --name=GRAFANA \
     -e GF_SECURITY_ADMIN_USER=IlyaS \
     -e GF_SECURITY_ADMIN_PASSWORD=abobus \
     -v /home/DU/DOKER/GRAFANA/grafana:/var/lib/grafana \
+     --restart=always \
     -p 3000:3000 grafana/grafana:12.4.0-20977568970-ubuntu
 ```
 
