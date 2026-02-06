@@ -49,6 +49,21 @@ chown 472:472 grafana/
 <br><br/>
 <br><br/>
 
+<br><br/>
+<br><br/>
+<br><br/>
+
+docker run --name=PROMETHEUS \
+    -p 127.0.0.1:9090:9090 \
+    -v /path/to/prometheus.yml:/etc/prometheus/prometheus.yml \
+    -v prometheus-data:/prometheus \
+    -d prom/prometheus:v3.9.1
+
+
+<br><br/>
+<br><br/>
+<br><br/>
+
 # Grafana на систему
 
 <br><br/>
