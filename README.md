@@ -53,11 +53,34 @@ chown 472:472 grafana/
 <br><br/>
 <br><br/>
 
+## GRAFANA + PROMETHEUS
+
+<br><br/>
+<br><br/>
+
+```
+touch /home/DU/DOKER/PROMETHEUS/prometheus.yml
+```
+
+Минимальный рабочий конфиг^
+
+```
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: "prometheus"
+    static_configs:
+      - targets: ["localhost:9090"]
+```
+
+```
 docker run --name=PROMETHEUS \
     -p 127.0.0.1:9090:9090 \
     -v /home/DU/DOKER/PROMETHEUS/prometheus.yml:/etc/prometheus/prometheus.yml \
     -v /home/DU/DOKER/PROMETHEUS/prometheus:/prometheus \
     -d prom/prometheus:v3.9.1
+```
 
 
 <br><br/>
