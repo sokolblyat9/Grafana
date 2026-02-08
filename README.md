@@ -75,6 +75,10 @@ scrape_configs:
 ```
 
 ```
+chmod 777 /home/DU/DOKER/PROMETHEUS/prometheus
+```
+
+```
 docker run --name=PROMETHEUS \
     -p 127.0.0.1:9090:9090 \
     -v /home/DU/DOKER/PROMETHEUS/prometheus.yml:/etc/prometheus/prometheus.yml \
