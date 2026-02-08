@@ -80,7 +80,7 @@ chmod 777 /home/DU/DOKER/PROMETHEUS/prometheus
 
 ```
 docker run --name=PROMETHEUS \
-    -p 127.0.0.1:9090:9090 \
+    -p 192.168.0.2:9090:9090 \
     -v /home/DU/DOKER/PROMETHEUS/prometheus.yml:/etc/prometheus/prometheus.yml \
     -v /home/DU/DOKER/PROMETHEUS/prometheus:/prometheus \
     -d prom/prometheus:v3.9.1
